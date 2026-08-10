@@ -1,53 +1,7 @@
-theia@theiadocker-tafhim07:/home/project/final_project/oaqjp-final-project-emb-ai$ touch emotion_detection.py
-theia@theiadocker-tafhim07:/home/project/final_project/oaqjp-final-project-emb-ai$ Bash python3
-bash: Bash: command not found
 theia@theiadocker-tafhim07:/home/project/final_project/oaqjp-final-project-emb-ai$ python3
 Python 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
->>> from emotion_detection import emotion_detector
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "/home/project/final_project/oaqjp-final-project-emb-ai/emotion_detection.py", line 1, in <module>
-    import requests
-ModuleNotFoundError: No module named 'requests'
->>> exit()
-theia@theiadocker-tafhim07:/home/project/final_project/oaqjp-final-project-emb-ai$ python3 -m pip install requests
-Defaulting to user installation because normal site-packages is not writeable
-Collecting requests
-  Downloading requests-2.34.2-py3-none-any.whl (73 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 KB 2.4 MB/s eta 0:00:00
-Collecting idna<4,>=2.5
-  Downloading idna-3.18-py3-none-any.whl (65 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 KB 10.4 MB/s eta 0:00:00
-Collecting urllib3<3,>=1.26
-  Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 131.1/131.1 KB 25.4 MB/s eta 0:00:00
-Collecting charset_normalizer<4,>=2
-  Downloading charset_normalizer-3.4.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (223 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.8/223.8 KB 27.4 MB/s eta 0:00:00
-Collecting certifi>=2023.5.7
-  Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.0/137.0 KB 22.0 MB/s eta 0:00:00
-Installing collected packages: urllib3, idna, charset_normalizer, certifi, requests
-Successfully installed certifi-2026.7.22 charset_normalizer-3.4.9 idna-3.18 requests-2.34.2 urllib3-2.7.0
-theia@theiadocker-tafhim07:/home/project/final_project/oaqjp-final-project-emb-ai$ python3
-Python 3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
+
 >>> from emotion_detection import emotion_detector
 >>> emotion_detector("I love this new technology.")
-'{"emotionPredictions":[{"emotion":{"anger":0.01364663, "disgust":0.0017160787, "fear":0.008986978, "joy":0.9719017, "sadness":0.055187024}, "target":"", "emotionMentions":[{"span":{"begin":0, "end":27, "text":"I love this new technology."}, "emotion":{"anger":0.01364663, "disgust":0.0017160787, "fear":0.008986978, "joy":0.9719017, "sadness":0.055187024}}]}], "producerId":{"name":"Ensemble Aggregated Emotion Workflow", "version":"0.0.1"}}'
->>> exit()
-theia@theiadocker-tafhim07:/home/project/final_project/oaqjp-final-project-emb-ai$ git status
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        emotion_detection.py
-
-nothing added to commit but untracked files present (use "git add" to track)
-theia@theiadocker-tafhim07:/home/project/final_project/oaqjp-final-project-emb-ai$ git add emotion_detection.py
-theia@theiadocker-tafhim07:/home/project/final_project/oaqjp-final-project-emb-ai$ git commit -m "Task 2"
-[main b3567e5] Task 2
- 1 file changed, 18 insertions(+)
- create mode 100644 emotion_detection.py
+'{"emotionPredictions":[{"emotion":{"anger":0.01364663,"disgust":0.0017160787,"fear":0.008986978,"joy":0.9719017,"sadness":0.055187024},"target":"","emotionMentions":[{"span":{"begin":0,"end":27,"text":"I love this new technology."},"emotion":{"anger":0.01364663,"disgust":0.0017160787,"fear":0.008986978,"joy":0.9719017,"sadness":0.055187024}}]}],"producerId":{"name":"Ensemble Aggregated Emotion Workflow","version":"0.0.1"}}'
